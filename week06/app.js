@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-console.log("Prova");
-=======
 function Question(id, text, email, date) {
     this.id =id;
     this.text = text;
@@ -79,6 +76,9 @@ function createAnswerRow(answer) {
         buttonVote.classList.add('btn', 'btn-warning');
         buttonVote.innerHTML = "<i class='bi bi-arrow-up'></i>"
         tdActions.appendChild(buttonVote);
+        buttonVote.addEventListener('click', event=>{console.log("risposta", answer.id);
+    console.log(event.target.parentElement.parentElement.id);}
+);
 
         const buttonEdit = document.createElement('button');
         buttonEdit.classList.add('btn', 'btn-primary', 'mx-1');
@@ -116,4 +116,3 @@ function main(){
 }
 
 main();
->>>>>>> a5aa8bba103a6a84711ebcd0fd60d8c6cd77c2c9
