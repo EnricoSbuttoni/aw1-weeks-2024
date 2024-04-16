@@ -76,9 +76,10 @@ function createAnswerRow(answer) {
         buttonVote.classList.add('btn', 'btn-warning');
         buttonVote.innerHTML = "<i class='bi bi-arrow-up'></i>"
         tdActions.appendChild(buttonVote);
-        buttonVote.addEventListener('click', event=>{console.log("risposta", answer.id);
-    console.log(event.target.parentElement.parentElement.id);}
-);
+        buttonVote.addEventListener('click', event=>{
+            console.log("risposta", answer.id);
+            console.log(event.target.parentElement.parentElement.id);}
+        );
 
         const buttonEdit = document.createElement('button');
         buttonEdit.classList.add('btn', 'btn-primary', 'mx-1');
